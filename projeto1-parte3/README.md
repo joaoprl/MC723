@@ -1,0 +1,5 @@
+![alt text](https://github.com/jpedrorl/MC723/blob/master/projeto1-parte3/Benchmark1(tempo).png "Benchmark1(tempo)")
+![alt text](https://github.com/jpedrorl/MC723/blob/master/projeto1-parte3/Benchmark2(tempo).png "Benchmark2(tempo)")
+![alt text](https://github.com/jpedrorl/MC723/blob/master/projeto1-parte3/Benchmark3(tempo).png "Benchmark3(tempo)")
+![alt text](https://github.com/jpedrorl/MC723/blob/master/projeto1-parte3/Benchmark1(disco).png "Benchmark1(disco)")
+![alt text](https://github.com/jpedrorl/MC723/blob/master/projeto1-parte3/Benchmark3(disco).png "Benchmark3(disco)")
