@@ -1,10 +1,10 @@
 MC723 - Laboratório de Projetos de Sistemas Computacionais
 ====
-Campinas, 31 de março de 2016
+Campinas, 07 de abril de 2016
 ####Professor: Lucas Wanner
 ####Nome: João Pedro Ramos Lopes - RA: 139546
 
-Exercicio : Benchmarking - Relatório
+Exercicio 2 - Configuração de Cache
 ====
 Objetivos:
 ----
@@ -20,7 +20,7 @@ Para determinar um processador foi considerado que um ótimo determinado por fla
 
 O comando foi utilizado conforme a seguir:
 
-* ./dinero4sbc/dineroIV -informat s -trname equake_m2b -maxtrace 20 -l1-isize L1IS -l1-dsize L1DS -l1-ibsize L1IB -l1-dbsize L1DB -l2-usize L2US -l2-ubsize L2UB
+* dineroIV -informat s -trname equake_m2b -maxtrace 20 -l1-isize L1IS -l1-dsize L1DS -l1-ibsize L1IB -l1-dbsize L1DB -l2-usize L2US -l2-ubsize L2UB
 
 Onde,
 
@@ -61,21 +61,32 @@ Inicialmente, executou-se o comando com valores baixos para cada variável, que 
 Gráficos
 ----
 ####Cache de instruções da L1
+![alt text](https://github.com/jpedrorl/MC723/blob/master/exercicio2/image0.png "L1 instruções")
 
 ####Cache de dados da L1
+![alt text](https://github.com/jpedrorl/MC723/blob/master/exercicio2/image1.png "L1 dados")
+![alt text](https://github.com/jpedrorl/MC723/blob/master/exercicio2/image2.png "L1 read write dados")
 
 ####Bloco de instruções da L1
+![alt text](https://github.com/jpedrorl/MC723/blob/master/exercicio2/image3.png "L1 instruções bloco")
 
 ####Bloco de dados da L1
+![alt text](https://github.com/jpedrorl/MC723/blob/master/exercicio2/image4.png "L1 dados bloco")
 
 ####Cache compartilhado L2
+![alt text](https://github.com/jpedrorl/MC723/blob/master/exercicio2/image5.png "L2 tamanho1")
+![alt text](https://github.com/jpedrorl/MC723/blob/master/exercicio2/image6.png "L2 tamanho2")
 
 ####Bloco compartilhado L2
+![alt text](https://github.com/jpedrorl/MC723/blob/master/exercicio2/image7.png "L2 bloco1")
+![alt text](https://github.com/jpedrorl/MC723/blob/master/exercicio2/image8.png "L2 bloco2")
+![alt text](https://github.com/jpedrorl/MC723/blob/master/exercicio2/image9.png "L2 bloco3")
 
 Referências
 ----
-1. http://www.notebookcheck.net/Intel-Core-i7-4940MX-Notebook-Processor.109619.0.html
-2. http://www.notebookcheck.net/AMD-FX-Series-Desktop-FX-8350-Notebook-Processor.91968.0.html
-3. http://www.notebookcheck.net/AMD-Athlon-II-P340-Notebook-Processor.37883.0.html
-4. http://hothardware.com/reviews/amd-fx-8350-vishera-8core-cpu-review?page=3
-5. http://www.intel.com/content/dam/www/public/us/en/documents/manuals/64-ia-32-architectures-optimization-manual.pdf
+1. https://github.com/jpedrorl/MC723/blob/master/exercicio2/rawData.pdf
+2. http://www.notebookcheck.net/Intel-Core-i7-4940MX-Notebook-Processor.109619.0.html
+3. http://www.notebookcheck.net/AMD-FX-Series-Desktop-FX-8350-Notebook-Processor.91968.0.html
+4. http://www.notebookcheck.net/AMD-Athlon-II-P340-Notebook-Processor.37883.0.html
+5. http://hothardware.com/reviews/amd-fx-8350-vishera-8core-cpu-review?page=3
+6. http://www.intel.com/content/dam/www/public/us/en/documents/manuals/64-ia-32-architectures-optimization-manual.pdf
