@@ -16,6 +16,7 @@ Resumo
 Foi disponibilizado o software de simulação e os traces a serem utilizados. Como programa de teste, foi escolhido o arquivo 183.equake.m2b.tar contendo traces para equake_m2b.
 Como base de limitações de um processador atual, foi utilizado um i7 Haswell da intel, conforme segue:
 ![alt text](https://github.com/jpedrorl/MC723/blob/master/exercicio2/haswell.png "Haswell i7")
+
 Para determinar um processador foi considerado que um ótimo determinado por flag geraria um ótimo global (guloso).
 
 O comando foi utilizado conforme a seguir:
@@ -60,6 +61,9 @@ Inicialmente, executou-se o comando com valores baixos para cada variável, que 
 
 Gráficos
 ----
+####Escolha de configuração
+Em cada etapa, a escolha foi baseada em minimizar o miss rate dos niveis L1 e L2 de cache, limitando os valores para próximos do processador intel-i7 conforme disposto anteriormente. 
+
 ####Cache de instruções da L1
 ![alt text](https://github.com/jpedrorl/MC723/blob/master/exercicio2/image0.png "L1 instruções")
 
@@ -82,6 +86,10 @@ Gráficos
 ![alt text](https://github.com/jpedrorl/MC723/blob/master/exercicio2/image8.png "L2 bloco2")
 ![alt text](https://github.com/jpedrorl/MC723/blob/master/exercicio2/image9.png "L2 bloco3")
 
+####Comparação com processadores reais
+Visando a comparação com processadores reais, foi realizada a simulação com valores encontrados em variados processadores - os processadores 4940MX e FX-8350 podem ser considerados topos de linha, enquanto o modelo AthlonII P340 pode ser considerado um modelo de entrada.
+![alt text](https://github.com/jpedrorl/MC723/blob/master/exercicio2/comparacao.png "Comparacao")
+
 Referências
 ----
 1. https://github.com/jpedrorl/MC723/blob/master/exercicio2/rawData.pdf
@@ -90,3 +98,6 @@ Referências
 4. http://www.notebookcheck.net/AMD-Athlon-II-P340-Notebook-Processor.37883.0.html
 5. http://hothardware.com/reviews/amd-fx-8350-vishera-8core-cpu-review?page=3
 6. http://www.intel.com/content/dam/www/public/us/en/documents/manuals/64-ia-32-architectures-optimization-manual.pdf
+7. http://www.ic.unicamp.br/~lucas/teaching/mc723/2016-1/ex2.html 
+8. http://pages.cs.wisc.edu/~markhill/DineroIV/
+9. http://www.ece.uah.edu/~lacasa/sbc/programs/README.txt
